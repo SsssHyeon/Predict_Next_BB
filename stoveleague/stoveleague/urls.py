@@ -20,5 +20,5 @@ from mybaseball import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
-    path('playerList', views.playerList),
+    path('playerList', views.getplayerList),
 ]

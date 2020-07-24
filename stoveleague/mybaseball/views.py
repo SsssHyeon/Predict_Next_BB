@@ -6,6 +6,6 @@ from mybaseball.models import Player
 def index(request):
     return render(request, 'index.html')
 
-def playerList(request):
-    playerList=Player.objects.all().order_by("-idx")
-    return render(request, "playerList.html", {"playerListt":playerList})
+def getplayerList(request):
+    playerList = Player.objects.all().order_by("playerId")
+    return render(request, "playerList.html", {"playerList":playerList})
