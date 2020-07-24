@@ -1,0 +1,29 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+            <th>idx</th>
+			<th>이름</th>
+			<th>팀</th>
+			<th>연봉</th>
+			<th>war</th>
+		</tr>
+		{% for row in playerList %}
+		<tr align="center">
+			<td>{{row.playerId}}</td>
+			<td>{{row.name}}</td>
+			<td>{{row.team}</td>
+            <td>{{row.salary}}</td>
+            <td>{{row.war}}</td>
+		</tr>
+		{% endfor %}
+		<tr>
+	</table>
+</body>
+</html>
