@@ -1,0 +1,15 @@
+.Button {
+    width: 320px;
+    height: 280px;
+    line-height: 280px;
+    position: relative;
+}
+
+.container{
+    background-image: url("images/main.jpg");
+    background-repeat: no-repeat;
+    background-color: white;
+    opacity: 0.3;
+    background-size: 100% 100%;
+    z-index: -1;
+}
